@@ -1,0 +1,3766 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getProposalType",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proposalType",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_proposalType",
+          "type": "string"
+        }
+      ],
+      "name": "setProposalType",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "0": "contracts/proposal.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/proposal.sol",
+    "exportedSymbols": {
+      "ProposalContract": [22]
+    },
+    "id": 23,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": ["solidity", "^", "0.8", ".0"],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ProposalContract",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 22,
+        "linearizedBaseContracts": [22],
+        "name": "ProposalContract",
+        "nameLocation": "66:16:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "351d9f96",
+            "id": 3,
+            "mutability": "mutable",
+            "name": "proposalType",
+            "nameLocation": "103:12:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 22,
+            "src": "89:26:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "89:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12,
+              "nodeType": "Block",
+              "src": "226:45:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 10,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 8,
+                      "name": "proposalType",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "236:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 9,
+                      "name": "_proposalType",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "251:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "236:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 11,
+                  "nodeType": "ExpressionStatement",
+                  "src": "236:28:0"
+                }
+              ]
+            },
+            "functionSelector": "6cc092bb",
+            "id": 13,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setProposalType",
+            "nameLocation": "172:15:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5,
+                  "mutability": "mutable",
+                  "name": "_proposalType",
+                  "nameLocation": "202:13:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "188:27:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "188:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "187:29:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "226:0:0"
+            },
+            "scope": 22,
+            "src": "163:108:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 20,
+              "nodeType": "Block",
+              "src": "383:36:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 18,
+                    "name": "proposalType",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3,
+                    "src": "400:12:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 17,
+                  "id": 19,
+                  "nodeType": "Return",
+                  "src": "393:19:0"
+                }
+              ]
+            },
+            "functionSelector": "4dba95a7",
+            "id": 21,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getProposalType",
+            "nameLocation": "327:15:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 14,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "342:2:0"
+            },
+            "returnParameters": {
+              "id": 17,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 16,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21,
+                  "src": "368:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 15,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "368:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "367:15:0"
+            },
+            "scope": 22,
+            "src": "318:101:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 23,
+        "src": "57:364:0",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "32:390:0"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50610448806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063351d9f96146100465780634dba95a7146100645780636cc092bb1461006c575b600080fd5b61004e610081565b60405161005b91906101b1565b60405180910390f35b61004e61010f565b61007f61007a366004610216565b6101a1565b005b6000805461008e906102c7565b80601f01602080910402602001604051908101604052809291908181526020018280546100ba906102c7565b80156101075780601f106100dc57610100808354040283529160200191610107565b820191906000526020600020905b8154815290600101906020018083116100ea57829003601f168201915b505050505081565b60606000805461011e906102c7565b80601f016020809104026020016040519081016040528092919081815260200182805461014a906102c7565b80156101975780601f1061016c57610100808354040283529160200191610197565b820191906000526020600020905b81548152906001019060200180831161017a57829003601f168201915b5050505050905090565b60006101ad8282610352565b5050565b60006020808352835180602085015260005b818110156101df578581018301518582016040015282016101c3565b506000604082860101526040601f19601f8301168501019250505092915050565b634e487b7160e01b600052604160045260246000fd5b60006020828403121561022857600080fd5b813567ffffffffffffffff8082111561024057600080fd5b818401915084601f83011261025457600080fd5b81358181111561026657610266610200565b604051601f8201601f19908116603f0116810190838211818310171561028e5761028e610200565b816040528281528760208487010111156102a757600080fd5b826020860160208301376000928101602001929092525095945050505050565b600181811c908216806102db57607f821691505b6020821081036102fb57634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561034d576000816000526020600020601f850160051c8101602086101561032a5750805b601f850160051c820191505b8181101561034957828155600101610336565b5050505b505050565b815167ffffffffffffffff81111561036c5761036c610200565b6103808161037a84546102c7565b84610301565b602080601f8311600181146103b5576000841561039d5750858301515b600019600386901b1c1916600185901b178555610349565b600085815260208120601f198616915b828110156103e4578886015182559484019460019091019084016103c5565b50858210156104025787850151600019600388901b60f8161c191681555b5050505050600190811b0190555056fea26469706673582212206e2aa7bd67a4692ef6a97e78cfa6daef59c5f418e6e651fda1e2c8520e3955a564736f6c63430008180033",
+  "bytecodeSha1": "427f1f00c62e9de4f0c7215cd5db7fbef04fe4e0",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.24+commit.e11b9ed9"
+  },
+  "contractName": "ProposalContract",
+  "coverageMap": {
+    "branches": {
+      "0": {}
+    },
+    "statements": {
+      "0": {
+        "ProposalContract.getProposalType": {
+          "0": [393, 412]
+        },
+        "ProposalContract.setProposalType": {
+          "1": [236, 264]
+        }
+      }
+    }
+  },
+  "dependencies": [],
+  "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c8063351d9f96146100465780634dba95a7146100645780636cc092bb1461006c575b600080fd5b61004e610081565b60405161005b91906101b1565b60405180910390f35b61004e61010f565b61007f61007a366004610216565b6101a1565b005b6000805461008e906102c7565b80601f01602080910402602001604051908101604052809291908181526020018280546100ba906102c7565b80156101075780601f106100dc57610100808354040283529160200191610107565b820191906000526020600020905b8154815290600101906020018083116100ea57829003601f168201915b505050505081565b60606000805461011e906102c7565b80601f016020809104026020016040519081016040528092919081815260200182805461014a906102c7565b80156101975780601f1061016c57610100808354040283529160200191610197565b820191906000526020600020905b81548152906001019060200180831161017a57829003601f168201915b5050505050905090565b60006101ad8282610352565b5050565b60006020808352835180602085015260005b818110156101df578581018301518582016040015282016101c3565b506000604082860101526040601f19601f8301168501019250505092915050565b634e487b7160e01b600052604160045260246000fd5b60006020828403121561022857600080fd5b813567ffffffffffffffff8082111561024057600080fd5b818401915084601f83011261025457600080fd5b81358181111561026657610266610200565b604051601f8201601f19908116603f0116810190838211818310171561028e5761028e610200565b816040528281528760208487010111156102a757600080fd5b826020860160208301376000928101602001929092525095945050505050565b600181811c908216806102db57607f821691505b6020821081036102fb57634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561034d576000816000526020600020601f850160051c8101602086101561032a5750805b601f850160051c820191505b8181101561034957828155600101610336565b5050505b505050565b815167ffffffffffffffff81111561036c5761036c610200565b6103808161037a84546102c7565b84610301565b602080601f8311600181146103b5576000841561039d5750858301515b600019600386901b1c1916600185901b178555610349565b600085815260208120601f198616915b828110156103e4578886015182559484019460019091019084016103c5565b50858210156104025787850151600019600388901b60f8161c191681555b5050505050600190811b0190555056fea26469706673582212206e2aa7bd67a4692ef6a97e78cfa6daef59c5f418e6e651fda1e2c8520e3955a564736f6c63430008180033",
+  "deployedSourceMap": "57:364:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;89:26;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;318:101;;;:::i;163:108::-;;;;;;:::i;:::-;;:::i;:::-;;89:26;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;318:101::-;368:13;400:12;393:19;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;318:101;:::o;163:108::-;236:12;:28;251:13;236:12;:28;:::i;:::-;;163:108;:::o;14:548:1:-;126:4;155:2;184;173:9;166:21;216:6;210:13;259:6;254:2;243:9;239:18;232:34;284:1;294:140;308:6;305:1;302:13;294:140;;;403:14;;;399:23;;393:30;369:17;;;388:2;365:26;358:66;323:10;;294:140;;;298:3;483:1;478:2;469:6;458:9;454:22;450:31;443:42;553:2;546;542:7;537:2;529:6;525:15;521:29;510:9;506:45;502:54;494:62;;;;14:548;;;;:::o;567:127::-;628:10;623:3;619:20;616:1;609:31;659:4;656:1;649:15;683:4;680:1;673:15;699:922;768:6;821:2;809:9;800:7;796:23;792:32;789:52;;;837:1;834;827:12;789:52;877:9;864:23;906:18;947:2;939:6;936:14;933:34;;;963:1;960;953:12;933:34;1001:6;990:9;986:22;976:32;;1046:7;1039:4;1035:2;1031:13;1027:27;1017:55;;1068:1;1065;1058:12;1017:55;1104:2;1091:16;1126:2;1122;1119:10;1116:36;;;1132:18;;:::i;:::-;1207:2;1201:9;1175:2;1261:13;;-1:-1:-1;;1257:22:1;;;1281:2;1253:31;1249:40;1237:53;;;1305:18;;;1325:22;;;1302:46;1299:72;;;1351:18;;:::i;:::-;1391:10;1387:2;1380:22;1426:2;1418:6;1411:18;1466:7;1461:2;1456;1452;1448:11;1444:20;1441:33;1438:53;;;1487:1;1484;1477:12;1438:53;1543:2;1538;1534;1530:11;1525:2;1517:6;1513:15;1500:46;1588:1;1566:15;;;1583:2;1562:24;1555:35;;;;-1:-1:-1;1570:6:1;699:922;-1:-1:-1;;;;;699:922:1:o;1626:380::-;1705:1;1701:12;;;;1748;;;1769:61;;1823:4;1815:6;1811:17;1801:27;;1769:61;1876:2;1868:6;1865:14;1845:18;1842:38;1839:161;;1922:10;1917:3;1913:20;1910:1;1903:31;1957:4;1954:1;1947:15;1985:4;1982:1;1975:15;1839:161;;1626:380;;;:::o;2137:543::-;2239:2;2234:3;2231:11;2228:446;;;2275:1;2299:5;2296:1;2289:16;2343:4;2340:1;2330:18;2413:2;2401:10;2397:19;2394:1;2390:27;2384:4;2380:38;2449:4;2437:10;2434:20;2431:47;;;-1:-1:-1;2472:4:1;2431:47;2527:2;2522:3;2518:12;2515:1;2511:20;2505:4;2501:31;2491:41;;2582:82;2600:2;2593:5;2590:13;2582:82;;;2645:17;;;2626:1;2615:13;2582:82;;;2586:3;;;2228:446;2137:543;;;:::o;2856:1345::-;2982:3;2976:10;3009:18;3001:6;2998:30;2995:56;;;3031:18;;:::i;:::-;3060:97;3150:6;3110:38;3142:4;3136:11;3110:38;:::i;:::-;3104:4;3060:97;:::i;:::-;3212:4;;3269:2;3258:14;;3286:1;3281:663;;;;3988:1;4005:6;4002:89;;;-1:-1:-1;4057:19:1;;;4051:26;4002:89;-1:-1:-1;;2813:1:1;2809:11;;;2805:24;2801:29;2791:40;2837:1;2833:11;;;2788:57;4104:81;;3251:944;;3281:663;2084:1;2077:14;;;2121:4;2108:18;;-1:-1:-1;;3317:20:1;;;3435:236;3449:7;3446:1;3443:14;3435:236;;;3538:19;;;3532:26;3517:42;;3630:27;;;;3598:1;3586:14;;;;3465:19;;3435:236;;;3439:3;3699:6;3690:7;3687:19;3684:201;;;3760:19;;;3754:26;-1:-1:-1;;3843:1:1;3839:14;;;3855:3;3835:24;3831:37;3827:42;3812:58;3797:74;;3684:201;-1:-1:-1;;;;;3931:1:1;3915:14;;;3911:22;3898:36;;-1:-1:-1;2856:1345:1:o",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [57, 421],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x41 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x351D9F96 EQ PUSH2 0x46 JUMPI DUP1 PUSH4 0x4DBA95A7 EQ PUSH2 0x64 JUMPI DUP1 PUSH4 0x6CC092BB EQ PUSH2 0x6C JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x4E PUSH2 0x81 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH2 0x5B SWAP2 SWAP1 PUSH2 0x1B1 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH2 0x4E PUSH2 0x10F JUMP JUMPDEST PUSH2 0x7F PUSH2 0x7A CALLDATASIZE PUSH1 0x4 PUSH2 0x216 JUMP JUMPDEST PUSH2 0x1A1 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH2 0x8E SWAP1 PUSH2 0x2C7 JUMP JUMPDEST DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP3 DUP1 SLOAD PUSH2 0xBA SWAP1 PUSH2 0x2C7 JUMP JUMPDEST DUP1 ISZERO PUSH2 0x107 JUMPI DUP1 PUSH1 0x1F LT PUSH2 0xDC JUMPI PUSH2 0x100 DUP1 DUP4 SLOAD DIV MUL DUP4 MSTORE SWAP2 PUSH1 0x20 ADD SWAP2 PUSH2 0x107 JUMP JUMPDEST DUP3 ADD SWAP2 SWAP1 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 SWAP1 JUMPDEST DUP2 SLOAD DUP2 MSTORE SWAP1 PUSH1 0x1 ADD SWAP1 PUSH1 0x20 ADD DUP1 DUP4 GT PUSH2 0xEA JUMPI DUP3 SWAP1 SUB PUSH1 0x1F AND DUP3 ADD SWAP2 JUMPDEST POP POP POP POP POP DUP2 JUMP JUMPDEST PUSH1 0x60 PUSH1 0x0 DUP1 SLOAD PUSH2 0x11E SWAP1 PUSH2 0x2C7 JUMP JUMPDEST DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP3 DUP1 SLOAD PUSH2 0x14A SWAP1 PUSH2 0x2C7 JUMP JUMPDEST DUP1 ISZERO PUSH2 0x197 JUMPI DUP1 PUSH1 0x1F LT PUSH2 0x16C JUMPI PUSH2 0x100 DUP1 DUP4 SLOAD DIV MUL DUP4 MSTORE SWAP2 PUSH1 0x20 ADD SWAP2 PUSH2 0x197 JUMP JUMPDEST DUP3 ADD SWAP2 SWAP1 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 SWAP1 JUMPDEST DUP2 SLOAD DUP2 MSTORE SWAP1 PUSH1 0x1 ADD SWAP1 PUSH1 0x20 ADD DUP1 DUP4 GT PUSH2 0x17A JUMPI DUP3 SWAP1 SUB PUSH1 0x1F AND DUP3 ADD SWAP2 JUMPDEST POP POP POP POP POP SWAP1 POP SWAP1 JUMP JUMPDEST PUSH1 0x0 PUSH2 0x1AD DUP3 DUP3 PUSH2 0x352 JUMP JUMPDEST POP POP JUMP JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP1 DUP4 MSTORE DUP4 MLOAD DUP1 PUSH1 0x20 DUP6 ADD MSTORE PUSH1 0x0 JUMPDEST DUP2 DUP2 LT ISZERO PUSH2 0x1DF JUMPI DUP6 DUP2 ADD DUP4 ADD MLOAD DUP6 DUP3 ADD PUSH1 0x40 ADD MSTORE DUP3 ADD PUSH2 0x1C3 JUMP JUMPDEST POP PUSH1 0x0 PUSH1 0x40 DUP3 DUP7 ADD ADD MSTORE PUSH1 0x40 PUSH1 0x1F NOT PUSH1 0x1F DUP4 ADD AND DUP6 ADD ADD SWAP3 POP POP POP SWAP3 SWAP2 POP POP JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x41 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST PUSH1 0x0 PUSH1 0x20 DUP3 DUP5 SUB SLT ISZERO PUSH2 0x228 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 CALLDATALOAD PUSH8 0xFFFFFFFFFFFFFFFF DUP1 DUP3 GT ISZERO PUSH2 0x240 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 DUP5 ADD SWAP2 POP DUP5 PUSH1 0x1F DUP4 ADD SLT PUSH2 0x254 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 CALLDATALOAD DUP2 DUP2 GT ISZERO PUSH2 0x266 JUMPI PUSH2 0x266 PUSH2 0x200 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x1F DUP3 ADD PUSH1 0x1F NOT SWAP1 DUP2 AND PUSH1 0x3F ADD AND DUP2 ADD SWAP1 DUP4 DUP3 GT DUP2 DUP4 LT OR ISZERO PUSH2 0x28E JUMPI PUSH2 0x28E PUSH2 0x200 JUMP JUMPDEST DUP2 PUSH1 0x40 MSTORE DUP3 DUP2 MSTORE DUP8 PUSH1 0x20 DUP5 DUP8 ADD ADD GT ISZERO PUSH2 0x2A7 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 PUSH1 0x20 DUP7 ADD PUSH1 0x20 DUP4 ADD CALLDATACOPY PUSH1 0x0 SWAP3 DUP2 ADD PUSH1 0x20 ADD SWAP3 SWAP1 SWAP3 MSTORE POP SWAP6 SWAP5 POP POP POP POP POP JUMP JUMPDEST PUSH1 0x1 DUP2 DUP2 SHR SWAP1 DUP3 AND DUP1 PUSH2 0x2DB JUMPI PUSH1 0x7F DUP3 AND SWAP2 POP JUMPDEST PUSH1 0x20 DUP3 LT DUP2 SUB PUSH2 0x2FB JUMPI PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x22 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST POP SWAP2 SWAP1 POP JUMP JUMPDEST PUSH1 0x1F DUP3 GT ISZERO PUSH2 0x34D JUMPI PUSH1 0x0 DUP2 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 PUSH1 0x1F DUP6 ADD PUSH1 0x5 SHR DUP2 ADD PUSH1 0x20 DUP7 LT ISZERO PUSH2 0x32A JUMPI POP DUP1 JUMPDEST PUSH1 0x1F DUP6 ADD PUSH1 0x5 SHR DUP3 ADD SWAP2 POP JUMPDEST DUP2 DUP2 LT ISZERO PUSH2 0x349 JUMPI DUP3 DUP2 SSTORE PUSH1 0x1 ADD PUSH2 0x336 JUMP JUMPDEST POP POP POP JUMPDEST POP POP POP JUMP JUMPDEST DUP2 MLOAD PUSH8 0xFFFFFFFFFFFFFFFF DUP2 GT ISZERO PUSH2 0x36C JUMPI PUSH2 0x36C PUSH2 0x200 JUMP JUMPDEST PUSH2 0x380 DUP2 PUSH2 0x37A DUP5 SLOAD PUSH2 0x2C7 JUMP JUMPDEST DUP5 PUSH2 0x301 JUMP JUMPDEST PUSH1 0x20 DUP1 PUSH1 0x1F DUP4 GT PUSH1 0x1 DUP2 EQ PUSH2 0x3B5 JUMPI PUSH1 0x0 DUP5 ISZERO PUSH2 0x39D JUMPI POP DUP6 DUP4 ADD MLOAD JUMPDEST PUSH1 0x0 NOT PUSH1 0x3 DUP7 SWAP1 SHL SHR NOT AND PUSH1 0x1 DUP6 SWAP1 SHL OR DUP6 SSTORE PUSH2 0x349 JUMP JUMPDEST PUSH1 0x0 DUP6 DUP2 MSTORE PUSH1 0x20 DUP2 KECCAK256 PUSH1 0x1F NOT DUP7 AND SWAP2 JUMPDEST DUP3 DUP2 LT ISZERO PUSH2 0x3E4 JUMPI DUP9 DUP7 ADD MLOAD DUP3 SSTORE SWAP5 DUP5 ADD SWAP5 PUSH1 0x1 SWAP1 SWAP2 ADD SWAP1 DUP5 ADD PUSH2 0x3C5 JUMP JUMPDEST POP DUP6 DUP3 LT ISZERO PUSH2 0x402 JUMPI DUP8 DUP6 ADD MLOAD PUSH1 0x0 NOT PUSH1 0x3 DUP9 SWAP1 SHL PUSH1 0xF8 AND SHR NOT AND DUP2 SSTORE JUMPDEST POP POP POP POP POP PUSH1 0x1 SWAP1 DUP2 SHL ADD SWAP1 SSTORE POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH15 0x2AA7BD67A4692EF6A97E78CFA6DAEF MSIZE 0xC5 DELEGATECALL XOR 0xE6 0xE6 MLOAD REVERT LOG1 0xE2 0xC8 MSTORE 0xE CODECOPY SSTORE 0xA5 PUSH5 0x736F6C6343 STOP ADDMOD XOR STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [57, 421],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "5": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "CALLVALUE",
+      "path": "0"
+    },
+    "6": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "7": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "8": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "12": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [57, 421],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "16": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "17": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "POP",
+      "path": "0"
+    },
+    "18": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "CALLDATASIZE",
+      "path": "0"
+    },
+    "21": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "LT",
+      "path": "0"
+    },
+    "22": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x41"
+    },
+    "25": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "26": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "CALLDATALOAD",
+      "path": "0"
+    },
+    "29": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "SHR",
+      "path": "0"
+    },
+    "32": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "33": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x351D9F96"
+    },
+    "38": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "EQ",
+      "path": "0"
+    },
+    "39": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x46"
+    },
+    "42": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "43": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "44": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x4DBA95A7"
+    },
+    "49": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "EQ",
+      "path": "0"
+    },
+    "50": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x64"
+    },
+    "53": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "54": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "55": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0x6CC092BB"
+    },
+    "60": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "EQ",
+      "path": "0"
+    },
+    "61": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x6C"
+    },
+    "64": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "65": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "66": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "68": {
+      "fn": null,
+      "offset": [57, 421],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "69": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [57, 421],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "70": {
+      "offset": [89, 115],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "71": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x4E"
+    },
+    "74": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x81"
+    },
+    "77": {
+      "fn": null,
+      "jump": "i",
+      "offset": [89, 115],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "78": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "79": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "81": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "82": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x5B"
+    },
+    "85": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "86": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "87": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1B1"
+    },
+    "90": {
+      "fn": null,
+      "jump": "i",
+      "offset": [89, 115],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "91": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "92": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "94": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "95": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "96": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "97": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "SUB",
+      "path": "0"
+    },
+    "98": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "99": {
+      "fn": null,
+      "offset": [89, 115],
+      "op": "RETURN",
+      "path": "0"
+    },
+    "100": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [318, 419],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "101": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [318, 419],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x4E"
+    },
+    "104": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [318, 419],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x10F"
+    },
+    "107": {
+      "fn": "ProposalContract.getProposalType",
+      "jump": "i",
+      "offset": [318, 419],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "108": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "109": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x7F"
+    },
+    "112": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x7A"
+    },
+    "115": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "CALLDATASIZE",
+      "path": "0"
+    },
+    "116": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "118": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x216"
+    },
+    "121": {
+      "fn": "ProposalContract.setProposalType",
+      "jump": "i",
+      "offset": [163, 271],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "122": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "123": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1A1"
+    },
+    "126": {
+      "fn": "ProposalContract.setProposalType",
+      "jump": "i",
+      "offset": [163, 271],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "127": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "128": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "STOP",
+      "path": "0"
+    },
+    "129": {
+      "offset": [89, 115],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "130": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "132": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "133": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "134": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x8E"
+    },
+    "137": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "138": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2C7"
+    },
+    "141": {
+      "fn": "ProposalContract.setProposalType",
+      "jump": "i",
+      "offset": [89, 115],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "142": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "143": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "144": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1F"
+    },
+    "146": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ADD",
+      "path": "0"
+    },
+    "147": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "149": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "150": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "151": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DIV",
+      "path": "0"
+    },
+    "152": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "MUL",
+      "path": "0"
+    },
+    "153": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "155": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ADD",
+      "path": "0"
+    },
+    "156": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "158": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "159": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "160": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "161": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ADD",
+      "path": "0"
+    },
+    "162": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "164": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "165": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "166": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP3",
+      "path": "0"
+    },
+    "167": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "168": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "169": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "170": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "171": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "172": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "174": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ADD",
+      "path": "0"
+    },
+    "175": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "176": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "177": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "178": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xBA"
+    },
+    "181": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "182": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2C7"
+    },
+    "185": {
+      "fn": "ProposalContract.setProposalType",
+      "jump": "i",
+      "offset": [89, 115],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "186": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "187": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "188": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "189": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x107"
+    },
+    "192": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "193": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "194": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1F"
+    },
+    "196": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "LT",
+      "path": "0"
+    },
+    "197": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xDC"
+    },
+    "200": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "201": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x100"
+    },
+    "204": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "205": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "206": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "207": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DIV",
+      "path": "0"
+    },
+    "208": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "MUL",
+      "path": "0"
+    },
+    "209": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "210": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "211": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "212": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "214": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ADD",
+      "path": "0"
+    },
+    "215": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "216": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x107"
+    },
+    "219": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "220": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "221": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "222": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ADD",
+      "path": "0"
+    },
+    "223": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "224": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "225": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "227": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "228": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "230": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "232": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "KECCAK256",
+      "path": "0"
+    },
+    "233": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "234": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "235": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "236": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "237": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "238": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "239": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "240": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "242": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ADD",
+      "path": "0"
+    },
+    "243": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "244": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "246": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ADD",
+      "path": "0"
+    },
+    "247": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "248": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "249": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "GT",
+      "path": "0"
+    },
+    "250": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xEA"
+    },
+    "253": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "254": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "255": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "256": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SUB",
+      "path": "0"
+    },
+    "257": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1F"
+    },
+    "259": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "AND",
+      "path": "0"
+    },
+    "260": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "261": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "ADD",
+      "path": "0"
+    },
+    "262": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "263": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "264": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "POP",
+      "path": "0"
+    },
+    "265": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "POP",
+      "path": "0"
+    },
+    "266": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "POP",
+      "path": "0"
+    },
+    "267": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "POP",
+      "path": "0"
+    },
+    "268": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "POP",
+      "path": "0"
+    },
+    "269": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [89, 115],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "270": {
+      "fn": "ProposalContract.setProposalType",
+      "jump": "o",
+      "offset": [89, 115],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "271": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [318, 419],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "272": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [368, 381],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x60"
+    },
+    "274": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [400, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 0,
+      "value": "0x0"
+    },
+    "276": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "277": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "278": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x11E"
+    },
+    "281": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "282": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2C7"
+    },
+    "285": {
+      "fn": "ProposalContract.getProposalType",
+      "jump": "i",
+      "offset": [393, 412],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "286": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "287": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "288": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1F"
+    },
+    "290": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ADD",
+      "path": "0"
+    },
+    "291": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "293": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "294": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "295": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DIV",
+      "path": "0"
+    },
+    "296": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "MUL",
+      "path": "0"
+    },
+    "297": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "299": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ADD",
+      "path": "0"
+    },
+    "300": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "302": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "303": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "304": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "305": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ADD",
+      "path": "0"
+    },
+    "306": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "308": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "309": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "310": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP3",
+      "path": "0"
+    },
+    "311": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "312": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "313": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "314": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "315": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "316": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "318": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ADD",
+      "path": "0"
+    },
+    "319": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "320": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "321": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "322": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x14A"
+    },
+    "325": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "326": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x2C7"
+    },
+    "329": {
+      "fn": "ProposalContract.getProposalType",
+      "jump": "i",
+      "offset": [393, 412],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "330": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "331": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "332": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "333": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x197"
+    },
+    "336": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "337": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "338": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1F"
+    },
+    "340": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "LT",
+      "path": "0"
+    },
+    "341": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x16C"
+    },
+    "344": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "345": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x100"
+    },
+    "348": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "349": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "350": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "351": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DIV",
+      "path": "0"
+    },
+    "352": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "MUL",
+      "path": "0"
+    },
+    "353": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "354": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "355": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "356": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "358": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ADD",
+      "path": "0"
+    },
+    "359": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "360": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x197"
+    },
+    "363": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "364": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "365": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "366": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ADD",
+      "path": "0"
+    },
+    "367": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "368": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "369": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "371": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "372": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "374": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "376": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "KECCAK256",
+      "path": "0"
+    },
+    "377": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "378": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "379": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "380": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SLOAD",
+      "path": "0"
+    },
+    "381": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "382": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "383": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "384": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1"
+    },
+    "386": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ADD",
+      "path": "0"
+    },
+    "387": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "388": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x20"
+    },
+    "390": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ADD",
+      "path": "0"
+    },
+    "391": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "392": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "393": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "GT",
+      "path": "0"
+    },
+    "394": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x17A"
+    },
+    "397": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "398": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "399": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "400": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SUB",
+      "path": "0"
+    },
+    "401": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x1F"
+    },
+    "403": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "AND",
+      "path": "0"
+    },
+    "404": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "405": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "ADD",
+      "path": "0"
+    },
+    "406": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "407": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "408": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "POP",
+      "path": "0"
+    },
+    "409": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "POP",
+      "path": "0"
+    },
+    "410": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "POP",
+      "path": "0"
+    },
+    "411": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "POP",
+      "path": "0"
+    },
+    "412": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "POP",
+      "path": "0"
+    },
+    "413": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "414": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [393, 412],
+      "op": "POP",
+      "path": "0"
+    },
+    "415": {
+      "fn": "ProposalContract.getProposalType",
+      "offset": [318, 419],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "416": {
+      "fn": "ProposalContract.getProposalType",
+      "jump": "o",
+      "offset": [318, 419],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "417": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "418": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [236, 248],
+      "op": "PUSH1",
+      "path": "0",
+      "statement": 1,
+      "value": "0x0"
+    },
+    "420": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [236, 264],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x1AD"
+    },
+    "423": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [251, 264],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "424": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [236, 248],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "425": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [236, 264],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x352"
+    },
+    "428": {
+      "fn": "ProposalContract.setProposalType",
+      "jump": "i",
+      "offset": [236, 264],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "429": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [236, 264],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "430": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [236, 264],
+      "op": "POP",
+      "path": "0"
+    },
+    "431": {
+      "fn": "ProposalContract.setProposalType",
+      "offset": [163, 271],
+      "op": "POP",
+      "path": "0"
+    },
+    "432": {
+      "fn": "ProposalContract.setProposalType",
+      "jump": "o",
+      "offset": [163, 271],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "433": {
+      "op": "JUMPDEST"
+    },
+    "434": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "436": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "438": {
+      "op": "DUP1"
+    },
+    "439": {
+      "op": "DUP4"
+    },
+    "440": {
+      "op": "MSTORE"
+    },
+    "441": {
+      "op": "DUP4"
+    },
+    "442": {
+      "op": "MLOAD"
+    },
+    "443": {
+      "op": "DUP1"
+    },
+    "444": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "446": {
+      "op": "DUP6"
+    },
+    "447": {
+      "op": "ADD"
+    },
+    "448": {
+      "op": "MSTORE"
+    },
+    "449": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "451": {
+      "op": "JUMPDEST"
+    },
+    "452": {
+      "op": "DUP2"
+    },
+    "453": {
+      "op": "DUP2"
+    },
+    "454": {
+      "op": "LT"
+    },
+    "455": {
+      "op": "ISZERO"
+    },
+    "456": {
+      "op": "PUSH2",
+      "value": "0x1DF"
+    },
+    "459": {
+      "op": "JUMPI"
+    },
+    "460": {
+      "op": "DUP6"
+    },
+    "461": {
+      "op": "DUP2"
+    },
+    "462": {
+      "op": "ADD"
+    },
+    "463": {
+      "op": "DUP4"
+    },
+    "464": {
+      "op": "ADD"
+    },
+    "465": {
+      "op": "MLOAD"
+    },
+    "466": {
+      "op": "DUP6"
+    },
+    "467": {
+      "op": "DUP3"
+    },
+    "468": {
+      "op": "ADD"
+    },
+    "469": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "471": {
+      "op": "ADD"
+    },
+    "472": {
+      "op": "MSTORE"
+    },
+    "473": {
+      "op": "DUP3"
+    },
+    "474": {
+      "op": "ADD"
+    },
+    "475": {
+      "op": "PUSH2",
+      "value": "0x1C3"
+    },
+    "478": {
+      "op": "JUMP"
+    },
+    "479": {
+      "op": "JUMPDEST"
+    },
+    "480": {
+      "op": "POP"
+    },
+    "481": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "483": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "485": {
+      "op": "DUP3"
+    },
+    "486": {
+      "op": "DUP7"
+    },
+    "487": {
+      "op": "ADD"
+    },
+    "488": {
+      "op": "ADD"
+    },
+    "489": {
+      "op": "MSTORE"
+    },
+    "490": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "492": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "494": {
+      "op": "NOT"
+    },
+    "495": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "497": {
+      "op": "DUP4"
+    },
+    "498": {
+      "op": "ADD"
+    },
+    "499": {
+      "op": "AND"
+    },
+    "500": {
+      "op": "DUP6"
+    },
+    "501": {
+      "op": "ADD"
+    },
+    "502": {
+      "op": "ADD"
+    },
+    "503": {
+      "op": "SWAP3"
+    },
+    "504": {
+      "op": "POP"
+    },
+    "505": {
+      "op": "POP"
+    },
+    "506": {
+      "op": "POP"
+    },
+    "507": {
+      "op": "SWAP3"
+    },
+    "508": {
+      "op": "SWAP2"
+    },
+    "509": {
+      "op": "POP"
+    },
+    "510": {
+      "op": "POP"
+    },
+    "511": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "512": {
+      "op": "JUMPDEST"
+    },
+    "513": {
+      "op": "PUSH4",
+      "value": "0x4E487B71"
+    },
+    "518": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "520": {
+      "op": "SHL"
+    },
+    "521": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "523": {
+      "op": "MSTORE"
+    },
+    "524": {
+      "op": "PUSH1",
+      "value": "0x41"
+    },
+    "526": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "528": {
+      "op": "MSTORE"
+    },
+    "529": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "531": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "533": {
+      "op": "REVERT"
+    },
+    "534": {
+      "op": "JUMPDEST"
+    },
+    "535": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "537": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "539": {
+      "op": "DUP3"
+    },
+    "540": {
+      "op": "DUP5"
+    },
+    "541": {
+      "op": "SUB"
+    },
+    "542": {
+      "op": "SLT"
+    },
+    "543": {
+      "op": "ISZERO"
+    },
+    "544": {
+      "op": "PUSH2",
+      "value": "0x228"
+    },
+    "547": {
+      "op": "JUMPI"
+    },
+    "548": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "550": {
+      "op": "DUP1"
+    },
+    "551": {
+      "op": "REVERT"
+    },
+    "552": {
+      "op": "JUMPDEST"
+    },
+    "553": {
+      "op": "DUP2"
+    },
+    "554": {
+      "op": "CALLDATALOAD"
+    },
+    "555": {
+      "op": "PUSH8",
+      "value": "0xFFFFFFFFFFFFFFFF"
+    },
+    "564": {
+      "op": "DUP1"
+    },
+    "565": {
+      "op": "DUP3"
+    },
+    "566": {
+      "op": "GT"
+    },
+    "567": {
+      "op": "ISZERO"
+    },
+    "568": {
+      "op": "PUSH2",
+      "value": "0x240"
+    },
+    "571": {
+      "op": "JUMPI"
+    },
+    "572": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "574": {
+      "op": "DUP1"
+    },
+    "575": {
+      "op": "REVERT"
+    },
+    "576": {
+      "op": "JUMPDEST"
+    },
+    "577": {
+      "op": "DUP2"
+    },
+    "578": {
+      "op": "DUP5"
+    },
+    "579": {
+      "op": "ADD"
+    },
+    "580": {
+      "op": "SWAP2"
+    },
+    "581": {
+      "op": "POP"
+    },
+    "582": {
+      "op": "DUP5"
+    },
+    "583": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "585": {
+      "op": "DUP4"
+    },
+    "586": {
+      "op": "ADD"
+    },
+    "587": {
+      "op": "SLT"
+    },
+    "588": {
+      "op": "PUSH2",
+      "value": "0x254"
+    },
+    "591": {
+      "op": "JUMPI"
+    },
+    "592": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "594": {
+      "op": "DUP1"
+    },
+    "595": {
+      "op": "REVERT"
+    },
+    "596": {
+      "op": "JUMPDEST"
+    },
+    "597": {
+      "op": "DUP2"
+    },
+    "598": {
+      "op": "CALLDATALOAD"
+    },
+    "599": {
+      "op": "DUP2"
+    },
+    "600": {
+      "op": "DUP2"
+    },
+    "601": {
+      "op": "GT"
+    },
+    "602": {
+      "op": "ISZERO"
+    },
+    "603": {
+      "op": "PUSH2",
+      "value": "0x266"
+    },
+    "606": {
+      "op": "JUMPI"
+    },
+    "607": {
+      "op": "PUSH2",
+      "value": "0x266"
+    },
+    "610": {
+      "op": "PUSH2",
+      "value": "0x200"
+    },
+    "613": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "614": {
+      "op": "JUMPDEST"
+    },
+    "615": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "617": {
+      "op": "MLOAD"
+    },
+    "618": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "620": {
+      "op": "DUP3"
+    },
+    "621": {
+      "op": "ADD"
+    },
+    "622": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "624": {
+      "op": "NOT"
+    },
+    "625": {
+      "op": "SWAP1"
+    },
+    "626": {
+      "op": "DUP2"
+    },
+    "627": {
+      "op": "AND"
+    },
+    "628": {
+      "op": "PUSH1",
+      "value": "0x3F"
+    },
+    "630": {
+      "op": "ADD"
+    },
+    "631": {
+      "op": "AND"
+    },
+    "632": {
+      "op": "DUP2"
+    },
+    "633": {
+      "op": "ADD"
+    },
+    "634": {
+      "op": "SWAP1"
+    },
+    "635": {
+      "op": "DUP4"
+    },
+    "636": {
+      "op": "DUP3"
+    },
+    "637": {
+      "op": "GT"
+    },
+    "638": {
+      "op": "DUP2"
+    },
+    "639": {
+      "op": "DUP4"
+    },
+    "640": {
+      "op": "LT"
+    },
+    "641": {
+      "op": "OR"
+    },
+    "642": {
+      "op": "ISZERO"
+    },
+    "643": {
+      "op": "PUSH2",
+      "value": "0x28E"
+    },
+    "646": {
+      "op": "JUMPI"
+    },
+    "647": {
+      "op": "PUSH2",
+      "value": "0x28E"
+    },
+    "650": {
+      "op": "PUSH2",
+      "value": "0x200"
+    },
+    "653": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "654": {
+      "op": "JUMPDEST"
+    },
+    "655": {
+      "op": "DUP2"
+    },
+    "656": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "658": {
+      "op": "MSTORE"
+    },
+    "659": {
+      "op": "DUP3"
+    },
+    "660": {
+      "op": "DUP2"
+    },
+    "661": {
+      "op": "MSTORE"
+    },
+    "662": {
+      "op": "DUP8"
+    },
+    "663": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "665": {
+      "op": "DUP5"
+    },
+    "666": {
+      "op": "DUP8"
+    },
+    "667": {
+      "op": "ADD"
+    },
+    "668": {
+      "op": "ADD"
+    },
+    "669": {
+      "op": "GT"
+    },
+    "670": {
+      "op": "ISZERO"
+    },
+    "671": {
+      "op": "PUSH2",
+      "value": "0x2A7"
+    },
+    "674": {
+      "op": "JUMPI"
+    },
+    "675": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "677": {
+      "op": "DUP1"
+    },
+    "678": {
+      "op": "REVERT"
+    },
+    "679": {
+      "op": "JUMPDEST"
+    },
+    "680": {
+      "op": "DUP3"
+    },
+    "681": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "683": {
+      "op": "DUP7"
+    },
+    "684": {
+      "op": "ADD"
+    },
+    "685": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "687": {
+      "op": "DUP4"
+    },
+    "688": {
+      "op": "ADD"
+    },
+    "689": {
+      "op": "CALLDATACOPY"
+    },
+    "690": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "692": {
+      "op": "SWAP3"
+    },
+    "693": {
+      "op": "DUP2"
+    },
+    "694": {
+      "op": "ADD"
+    },
+    "695": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "697": {
+      "op": "ADD"
+    },
+    "698": {
+      "op": "SWAP3"
+    },
+    "699": {
+      "op": "SWAP1"
+    },
+    "700": {
+      "op": "SWAP3"
+    },
+    "701": {
+      "op": "MSTORE"
+    },
+    "702": {
+      "op": "POP"
+    },
+    "703": {
+      "op": "SWAP6"
+    },
+    "704": {
+      "op": "SWAP5"
+    },
+    "705": {
+      "op": "POP"
+    },
+    "706": {
+      "op": "POP"
+    },
+    "707": {
+      "op": "POP"
+    },
+    "708": {
+      "op": "POP"
+    },
+    "709": {
+      "op": "POP"
+    },
+    "710": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "711": {
+      "op": "JUMPDEST"
+    },
+    "712": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "714": {
+      "op": "DUP2"
+    },
+    "715": {
+      "op": "DUP2"
+    },
+    "716": {
+      "op": "SHR"
+    },
+    "717": {
+      "op": "SWAP1"
+    },
+    "718": {
+      "op": "DUP3"
+    },
+    "719": {
+      "op": "AND"
+    },
+    "720": {
+      "op": "DUP1"
+    },
+    "721": {
+      "op": "PUSH2",
+      "value": "0x2DB"
+    },
+    "724": {
+      "op": "JUMPI"
+    },
+    "725": {
+      "op": "PUSH1",
+      "value": "0x7F"
+    },
+    "727": {
+      "op": "DUP3"
+    },
+    "728": {
+      "op": "AND"
+    },
+    "729": {
+      "op": "SWAP2"
+    },
+    "730": {
+      "op": "POP"
+    },
+    "731": {
+      "op": "JUMPDEST"
+    },
+    "732": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "734": {
+      "op": "DUP3"
+    },
+    "735": {
+      "op": "LT"
+    },
+    "736": {
+      "op": "DUP2"
+    },
+    "737": {
+      "op": "SUB"
+    },
+    "738": {
+      "op": "PUSH2",
+      "value": "0x2FB"
+    },
+    "741": {
+      "op": "JUMPI"
+    },
+    "742": {
+      "op": "PUSH4",
+      "value": "0x4E487B71"
+    },
+    "747": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "749": {
+      "op": "SHL"
+    },
+    "750": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "752": {
+      "op": "MSTORE"
+    },
+    "753": {
+      "op": "PUSH1",
+      "value": "0x22"
+    },
+    "755": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "757": {
+      "op": "MSTORE"
+    },
+    "758": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "760": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "762": {
+      "op": "REVERT"
+    },
+    "763": {
+      "op": "JUMPDEST"
+    },
+    "764": {
+      "op": "POP"
+    },
+    "765": {
+      "op": "SWAP2"
+    },
+    "766": {
+      "op": "SWAP1"
+    },
+    "767": {
+      "op": "POP"
+    },
+    "768": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "769": {
+      "op": "JUMPDEST"
+    },
+    "770": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "772": {
+      "op": "DUP3"
+    },
+    "773": {
+      "op": "GT"
+    },
+    "774": {
+      "op": "ISZERO"
+    },
+    "775": {
+      "op": "PUSH2",
+      "value": "0x34D"
+    },
+    "778": {
+      "op": "JUMPI"
+    },
+    "779": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "781": {
+      "op": "DUP2"
+    },
+    "782": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "784": {
+      "op": "MSTORE"
+    },
+    "785": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "787": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "789": {
+      "op": "KECCAK256"
+    },
+    "790": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "792": {
+      "op": "DUP6"
+    },
+    "793": {
+      "op": "ADD"
+    },
+    "794": {
+      "op": "PUSH1",
+      "value": "0x5"
+    },
+    "796": {
+      "op": "SHR"
+    },
+    "797": {
+      "op": "DUP2"
+    },
+    "798": {
+      "op": "ADD"
+    },
+    "799": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "801": {
+      "op": "DUP7"
+    },
+    "802": {
+      "op": "LT"
+    },
+    "803": {
+      "op": "ISZERO"
+    },
+    "804": {
+      "op": "PUSH2",
+      "value": "0x32A"
+    },
+    "807": {
+      "op": "JUMPI"
+    },
+    "808": {
+      "op": "POP"
+    },
+    "809": {
+      "op": "DUP1"
+    },
+    "810": {
+      "op": "JUMPDEST"
+    },
+    "811": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "813": {
+      "op": "DUP6"
+    },
+    "814": {
+      "op": "ADD"
+    },
+    "815": {
+      "op": "PUSH1",
+      "value": "0x5"
+    },
+    "817": {
+      "op": "SHR"
+    },
+    "818": {
+      "op": "DUP3"
+    },
+    "819": {
+      "op": "ADD"
+    },
+    "820": {
+      "op": "SWAP2"
+    },
+    "821": {
+      "op": "POP"
+    },
+    "822": {
+      "op": "JUMPDEST"
+    },
+    "823": {
+      "op": "DUP2"
+    },
+    "824": {
+      "op": "DUP2"
+    },
+    "825": {
+      "op": "LT"
+    },
+    "826": {
+      "op": "ISZERO"
+    },
+    "827": {
+      "op": "PUSH2",
+      "value": "0x349"
+    },
+    "830": {
+      "op": "JUMPI"
+    },
+    "831": {
+      "op": "DUP3"
+    },
+    "832": {
+      "op": "DUP2"
+    },
+    "833": {
+      "op": "SSTORE"
+    },
+    "834": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "836": {
+      "op": "ADD"
+    },
+    "837": {
+      "op": "PUSH2",
+      "value": "0x336"
+    },
+    "840": {
+      "op": "JUMP"
+    },
+    "841": {
+      "op": "JUMPDEST"
+    },
+    "842": {
+      "op": "POP"
+    },
+    "843": {
+      "op": "POP"
+    },
+    "844": {
+      "op": "POP"
+    },
+    "845": {
+      "op": "JUMPDEST"
+    },
+    "846": {
+      "op": "POP"
+    },
+    "847": {
+      "op": "POP"
+    },
+    "848": {
+      "op": "POP"
+    },
+    "849": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "850": {
+      "op": "JUMPDEST"
+    },
+    "851": {
+      "op": "DUP2"
+    },
+    "852": {
+      "op": "MLOAD"
+    },
+    "853": {
+      "op": "PUSH8",
+      "value": "0xFFFFFFFFFFFFFFFF"
+    },
+    "862": {
+      "op": "DUP2"
+    },
+    "863": {
+      "op": "GT"
+    },
+    "864": {
+      "op": "ISZERO"
+    },
+    "865": {
+      "op": "PUSH2",
+      "value": "0x36C"
+    },
+    "868": {
+      "op": "JUMPI"
+    },
+    "869": {
+      "op": "PUSH2",
+      "value": "0x36C"
+    },
+    "872": {
+      "op": "PUSH2",
+      "value": "0x200"
+    },
+    "875": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "876": {
+      "op": "JUMPDEST"
+    },
+    "877": {
+      "op": "PUSH2",
+      "value": "0x380"
+    },
+    "880": {
+      "op": "DUP2"
+    },
+    "881": {
+      "op": "PUSH2",
+      "value": "0x37A"
+    },
+    "884": {
+      "op": "DUP5"
+    },
+    "885": {
+      "op": "SLOAD"
+    },
+    "886": {
+      "op": "PUSH2",
+      "value": "0x2C7"
+    },
+    "889": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "890": {
+      "op": "JUMPDEST"
+    },
+    "891": {
+      "op": "DUP5"
+    },
+    "892": {
+      "op": "PUSH2",
+      "value": "0x301"
+    },
+    "895": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "896": {
+      "op": "JUMPDEST"
+    },
+    "897": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "899": {
+      "op": "DUP1"
+    },
+    "900": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "902": {
+      "op": "DUP4"
+    },
+    "903": {
+      "op": "GT"
+    },
+    "904": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "906": {
+      "op": "DUP2"
+    },
+    "907": {
+      "op": "EQ"
+    },
+    "908": {
+      "op": "PUSH2",
+      "value": "0x3B5"
+    },
+    "911": {
+      "op": "JUMPI"
+    },
+    "912": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "914": {
+      "op": "DUP5"
+    },
+    "915": {
+      "op": "ISZERO"
+    },
+    "916": {
+      "op": "PUSH2",
+      "value": "0x39D"
+    },
+    "919": {
+      "op": "JUMPI"
+    },
+    "920": {
+      "op": "POP"
+    },
+    "921": {
+      "op": "DUP6"
+    },
+    "922": {
+      "op": "DUP4"
+    },
+    "923": {
+      "op": "ADD"
+    },
+    "924": {
+      "op": "MLOAD"
+    },
+    "925": {
+      "op": "JUMPDEST"
+    },
+    "926": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "928": {
+      "op": "NOT"
+    },
+    "929": {
+      "op": "PUSH1",
+      "value": "0x3"
+    },
+    "931": {
+      "op": "DUP7"
+    },
+    "932": {
+      "op": "SWAP1"
+    },
+    "933": {
+      "op": "SHL"
+    },
+    "934": {
+      "op": "SHR"
+    },
+    "935": {
+      "op": "NOT"
+    },
+    "936": {
+      "op": "AND"
+    },
+    "937": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "939": {
+      "op": "DUP6"
+    },
+    "940": {
+      "op": "SWAP1"
+    },
+    "941": {
+      "op": "SHL"
+    },
+    "942": {
+      "op": "OR"
+    },
+    "943": {
+      "op": "DUP6"
+    },
+    "944": {
+      "op": "SSTORE"
+    },
+    "945": {
+      "op": "PUSH2",
+      "value": "0x349"
+    },
+    "948": {
+      "op": "JUMP"
+    },
+    "949": {
+      "op": "JUMPDEST"
+    },
+    "950": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "952": {
+      "op": "DUP6"
+    },
+    "953": {
+      "op": "DUP2"
+    },
+    "954": {
+      "op": "MSTORE"
+    },
+    "955": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "957": {
+      "op": "DUP2"
+    },
+    "958": {
+      "op": "KECCAK256"
+    },
+    "959": {
+      "op": "PUSH1",
+      "value": "0x1F"
+    },
+    "961": {
+      "op": "NOT"
+    },
+    "962": {
+      "op": "DUP7"
+    },
+    "963": {
+      "op": "AND"
+    },
+    "964": {
+      "op": "SWAP2"
+    },
+    "965": {
+      "op": "JUMPDEST"
+    },
+    "966": {
+      "op": "DUP3"
+    },
+    "967": {
+      "op": "DUP2"
+    },
+    "968": {
+      "op": "LT"
+    },
+    "969": {
+      "op": "ISZERO"
+    },
+    "970": {
+      "op": "PUSH2",
+      "value": "0x3E4"
+    },
+    "973": {
+      "op": "JUMPI"
+    },
+    "974": {
+      "op": "DUP9"
+    },
+    "975": {
+      "op": "DUP7"
+    },
+    "976": {
+      "op": "ADD"
+    },
+    "977": {
+      "op": "MLOAD"
+    },
+    "978": {
+      "op": "DUP3"
+    },
+    "979": {
+      "op": "SSTORE"
+    },
+    "980": {
+      "op": "SWAP5"
+    },
+    "981": {
+      "op": "DUP5"
+    },
+    "982": {
+      "op": "ADD"
+    },
+    "983": {
+      "op": "SWAP5"
+    },
+    "984": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "986": {
+      "op": "SWAP1"
+    },
+    "987": {
+      "op": "SWAP2"
+    },
+    "988": {
+      "op": "ADD"
+    },
+    "989": {
+      "op": "SWAP1"
+    },
+    "990": {
+      "op": "DUP5"
+    },
+    "991": {
+      "op": "ADD"
+    },
+    "992": {
+      "op": "PUSH2",
+      "value": "0x3C5"
+    },
+    "995": {
+      "op": "JUMP"
+    },
+    "996": {
+      "op": "JUMPDEST"
+    },
+    "997": {
+      "op": "POP"
+    },
+    "998": {
+      "op": "DUP6"
+    },
+    "999": {
+      "op": "DUP3"
+    },
+    "1000": {
+      "op": "LT"
+    },
+    "1001": {
+      "op": "ISZERO"
+    },
+    "1002": {
+      "op": "PUSH2",
+      "value": "0x402"
+    },
+    "1005": {
+      "op": "JUMPI"
+    },
+    "1006": {
+      "op": "DUP8"
+    },
+    "1007": {
+      "op": "DUP6"
+    },
+    "1008": {
+      "op": "ADD"
+    },
+    "1009": {
+      "op": "MLOAD"
+    },
+    "1010": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "1012": {
+      "op": "NOT"
+    },
+    "1013": {
+      "op": "PUSH1",
+      "value": "0x3"
+    },
+    "1015": {
+      "op": "DUP9"
+    },
+    "1016": {
+      "op": "SWAP1"
+    },
+    "1017": {
+      "op": "SHL"
+    },
+    "1018": {
+      "op": "PUSH1",
+      "value": "0xF8"
+    },
+    "1020": {
+      "op": "AND"
+    },
+    "1021": {
+      "op": "SHR"
+    },
+    "1022": {
+      "op": "NOT"
+    },
+    "1023": {
+      "op": "AND"
+    },
+    "1024": {
+      "op": "DUP2"
+    },
+    "1025": {
+      "op": "SSTORE"
+    },
+    "1026": {
+      "op": "JUMPDEST"
+    },
+    "1027": {
+      "op": "POP"
+    },
+    "1028": {
+      "op": "POP"
+    },
+    "1029": {
+      "op": "POP"
+    },
+    "1030": {
+      "op": "POP"
+    },
+    "1031": {
+      "op": "POP"
+    },
+    "1032": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "1034": {
+      "op": "SWAP1"
+    },
+    "1035": {
+      "op": "DUP2"
+    },
+    "1036": {
+      "op": "SHL"
+    },
+    "1037": {
+      "op": "ADD"
+    },
+    "1038": {
+      "op": "SWAP1"
+    },
+    "1039": {
+      "op": "SSTORE"
+    },
+    "1040": {
+      "op": "POP"
+    },
+    "1041": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "c8a402eaab56d0c5175c9758ec0a6b82ccd89f54",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract ProposalContract {\n    string public proposalType;\n\n    // Function to set the proposal type\n    function setProposalType(string memory _proposalType) external {\n        proposalType = _proposalType;\n    }\n\n    // Function to get the proposal type\n    function getProposalType() external view returns (string memory) {\n        return proposalType;\n    }\n}\n",
+  "sourceMap": "57:364:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/proposal.sol",
+  "type": "contract"
+}

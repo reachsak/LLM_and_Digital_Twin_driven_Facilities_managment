@@ -1,0 +1,216 @@
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  justify-content: center; /* Center the images horizontally */
+  grid-auto-rows: 350px;
+
+  margin: 10px;
+  font-family: "Jost", sans-serif;
+}
+.output-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  color: black; /* Set text color to black */
+  font-family: "Jost", sans-serif;
+}
+.image-list img {
+  width: 250px;
+  height: 350px;
+  font-family: "Jost", sans-serif;
+}
+.center {
+  margin: 40px;
+  font-family: "Jost", sans-serif;
+}
+
+.button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #009ffd, #2a2a72);
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  font-family: "Jost", sans-serif;
+}
+.button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  font-family: "Jost", sans-serif;
+}
+.address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+  font-family: "Jost", sans-serif;
+}
+
+.blue-button {
+  background-color: blue;
+}
+
+.green-button {
+  background-color: green;
+}
+
+.red-button {
+  background-color: red;
+}
+.retro-box {
+  border: 1px solid #000000; /* Black border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 16px; /* Padding around the buttons */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1); /* Sharp shadow effect */
+}
+
+.retro-box .pres-buttons .awesome-button {
+  /* Style for each button inside the retro box */
+  margin-right: 10px; /* Space between buttons */
+  background-color: #4caf50; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 24px; /* Padding inside the buttons */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition-duration: 0.4s;
+}
+
+.retro-box .pres-buttons .awesome-button:hover {
+  background-color: #45a049; /* Darker green background on hover */
+}
+
+/* Customize button styles for different types */
+.retro-box .pres-buttons .awesome-button-primary {
+  background-color: #008cba; /* Blue background for primary button */
+}
+
+.retro-box .pres-buttons .awesome-button-facebook {
+  background-color: #3b5998; /* Facebook blue background */
+}
+
+.retro-box .pres-buttons .awesome-button-whatsapp {
+  background-color: #25d366; /* WhatsApp green background */
+}
+
+.App {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.history-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 82vh;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px;
+}
+
+.message.user {
+  background-color: #f3f3f3;
+}
+
+.message.server {
+  background-color: #e6f7ff;
+}
+
+.input-area {
+  display: flex;
+  align-items: flex-end;
+}
+.send-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.textarea {
+  width: 98%;
+  height: 100px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+.send-button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.textarea-editable {
+  width: 95%;
+  height: 60px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.feedback-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+
+.feedback-icons button {
+  border: none;
+  background-color: transparent;
+}
+
+.feedback-icons button.selected {
+  border: none;
+  background-color: rgba(0, 123, 255, 0.2);
+  border-radius: 4px;
+}
+
+.feedback-icons .saveBtn {
+  background-color: #28a745;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-icons .saveBtn:hover {
+  background-color: #218838;
+}

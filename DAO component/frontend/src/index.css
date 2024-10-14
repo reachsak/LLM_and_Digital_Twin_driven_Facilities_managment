@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #efe9e9; /* Grey background color */
+}
+
+code {
+  font-family: "Jost", sans-serif;
+}

@@ -1,0 +1,98 @@
+.presentation-container {
+  padding: 5vh 20vw;
+  font-family: "Jost", sans-serif;
+}
+
+.presentation {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #03a8fa 0, #17e8dc 100%);
+
+  color: rgb(224, 215, 215);
+  position: relative;
+  font-family: "Jost", sans-serif;
+}
+
+/* .background-img{
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  width: 200px;
+  height: 100%;
+  background-image: url('./img/moralis.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+} */
+
+.pres-buttons {
+  margin-top: 20px;
+  font-family: "Jost", sans-serif;
+}
+
+.pres-btn {
+  margin-right: 20px !important;
+  font-family: "Jost", sans-serif;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+  font-family: "Jost", sans-serif;
+}
+
+.card {
+  width: calc((100% / 3) - 25px / 3);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.25);
+  border: 1px solid #dcdcdc;
+  font-family: "Jost", sans-serif;
+}
+
+.card-text {
+  font-size: 12px;
+  font-family: "Jost", sans-serif; /* Use Helvetica, fallback to Arial, then to generic sans-serif */
+}
+
+.prop-card {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid white;
+  margin-bottom: 30px;
+  font-family: "Jost", sans-serif;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.025);
+  font-family: "Jost", sans-serif;
+}
+.tab {
+  width: 20%;
+  background-color: transparent;
+  padding: 10px 0;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+}
+
+.tab-active {
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-family: "Jost", sans-serif;
+}
+
+.dao {
+  width: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #03a8fa 0, #e8b017 100%);
+  color: rgb(17, 15, 15);
+  font-family: "Jost", sans-serif;
+}

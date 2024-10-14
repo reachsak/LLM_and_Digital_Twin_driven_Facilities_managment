@@ -1,0 +1,67 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@ethersproject/solidity": "^5.7.0",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.2.2",
+    "axios": "^1.6.8",
+    "ether": "^0.0.9",
+    "ethers": "^5.7.2",
+    "fs": "^0.0.1-security",
+    "groq-sdk": "^0.3.3",
+    "ipfs-http-client": "^60.0.1",
+    "material-kit": "^2.0.4",
+    "microsoft-cognitiveservices-speech-sdk": "^1.36.0",
+    "node-microphone": "^0.1.6",
+    "ollama": "^0.5.0",
+    "react": "^18.2.0",
+    "react-awesome-button": "^7.0.5",
+    "react-dom": "^18.2.0",
+    "react-minimal-pie-chart": "^8.4.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "react-speech-recognition": "^3.10.0",
+    "react-webcam": "^7.2.0",
+    "recharts": "^2.12.3",
+    "replicate": "^0.29.1",
+    "responsivevoice": "^0.4.1",
+    "socket.io-client": "^4.7.5",
+    "speaker": "^0.5.5",
+    "wagmi": "^0.11.6",
+    "web-vitals": "^2.1.4",
+    "ws": "^8.16.0"
+  },
+  "scripts": {
+    "start": "react-scripts start ",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
