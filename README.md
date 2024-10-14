@@ -1,7 +1,7 @@
 # Data-Driven and Distributed Governance for Smart Building Facilities Management
 
-**Date:** January 2024 – Present  
-**Institution:** Virginia Polytechnic Institute and State University
+## Manuscript
+Under preparation...
 
 ## Demo
 
