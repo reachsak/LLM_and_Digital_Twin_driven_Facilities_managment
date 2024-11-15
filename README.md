@@ -1,12 +1,13 @@
 # Data-Driven and Distributed Governance for Smart Building Facilities Management
 
-## Manuscript
-Under preparation...
 
-## Demo
+## Video Demo
 
 [![Watch the demo video](https://img.youtube.com/vi/aH_DdPCd3Rc/0.jpg)](https://www.youtube.com/watch?v=aH_DdPCd3Rc)  
 *Click on the image to view the video.*
+
+## Manuscript
+Under preparation...
 
 ## Project Overview
 
