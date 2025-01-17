@@ -1,0 +1,59 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+        python-version: ["3.9", "3.10", "3.11"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Poetry (Unix)
+        if: matrix.os != 'windows-latest'
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          echo 'export PATH="$HOME/.local/bin:$PATH"' >> $GITHUB_ENV
+      - name: Install Poetry (Windows)
+        if: matrix.os == 'windows-latest'
+        run: |
+          (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+          echo "C:\\Users\\runneradmin\\AppData\\Roaming\\Python\\Scripts" >> $env:GITHUB_PATH
+      - name: Verify Poetry Installation
+        run: poetry --version
+      - name: Clear Poetry Cache
+        run: poetry cache clear pypi --all
+      - name: Install future
+        run: pip wheel --use-pep517 "future==0.18.3"
+      - name: Install dependencies
+        run: poetry install --all-extras --with dev --verbose
+      - name: Lint with ruff
+        run: make format_diff
+      - name: Spellcheck
+        run: make spell_check
+      - name: Run tests
+        run: poetry run pytest tests --ignore=tests/integration_tests
+      - name: Run code coverage
+        run: |
+          poetry run coverage run --source=pandasai -m pytest tests --ignore=tests/integration_tests
+          poetry run coverage xml
+      - name: Report coverage
+        run: poetry run coverage report
+      - name: Upload coverage reports to Codecov
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.11'
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage.xml
+          fail_ci_if_error: true
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
