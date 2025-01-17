@@ -29,10 +29,6 @@ This project focuses on implementing a data-driven governance model for smart bu
 - Large Language Models (LLMs)
 - Python 3.x
 
-### Installation
-
-*Coming soon...*
-
 ## Contributing
 
 Contributions are welcome! Please read the `CONTRIBUTING.md` file for details on how to contribute to this project.
