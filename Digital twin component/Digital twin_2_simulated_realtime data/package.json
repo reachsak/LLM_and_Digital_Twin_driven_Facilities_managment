@@ -1,0 +1,18 @@
+{
+  "name": "aps-iot-extensions-demo",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "@types/chart.js": "^2.9.35",
+    "@types/forge-viewer": "^7.61.0"
+  },
+  "dependencies": {
+    "@aps_sdk/authentication": "^0.1.0-beta.1",
+    "@aps_sdk/autodesk-sdkmanager": "^0.0.7-beta.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.3"
+  }
+}
