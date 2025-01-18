@@ -1,13 +1,12 @@
-# AI-Driven Smart Building Facilities Management
+# AI and digital twin-Driven Smart Building Facilities Management
 
 ## Project Overview
 
-This project focuses on implementing a data-driven governance model for smart building facilities management using blockchain technologies, digital twins, and large language models (LLMs). The aim is to enhance facility management through AI-driven insights and digital twin visualizations.
+This project focuses on implementing a AI and Digital twin-driven decision support system for for smart building facilities management using digital twins, and large language models (LLMs). The aim is to enhance facility management through AI-driven insights and digital twin visualizations.
 <img src="/fig1.png" style="float: left; margin-right: 20px; max-width: 200px;">
 <img src="/fig2.png" style="float: left; margin-right: 20px; max-width: 200px;">
 
 ### Key Features
-- **Data-Driven Governance Model:** Utilizes blockchain technology for secure and transparent management of building facilities.
 - **Digital Twin Visualization:** Creates a virtual replica of building systems to provide real-time monitoring and decision support.
 - **Large Language Models (LLMs):** Incorporates LLMs for advanced data analysis and natural language processing to improve governance and operational efficiency.
 - **AI-Driven Insights:** Provides actionable insights through AI and data analytics to optimize building management and operations.
