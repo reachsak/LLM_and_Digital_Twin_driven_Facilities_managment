@@ -1,4 +1,4 @@
-# Data-Driven and Distributed Governance for Smart Building Facilities Management
+# AI-Driven Smart Building Facilities Management
 ## Summary
 <img src="/fig1.png" style="float: left; margin-right: 20px; max-width: 200px;">
 ### AI Voice Chat and Image Understanding
