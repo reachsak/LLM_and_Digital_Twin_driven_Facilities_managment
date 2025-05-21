@@ -62,3 +62,10 @@ You can test the AI assistant’s data analysis features using any IoT sensor da
 An example dataset is included in the `AIassistant/` folder.
 
 
+
+
+## Digital twin visualization
+
+Please refer to this setup guide [Digital building twin setup guide](https://github.com/reachsak/digital-building-twin/blob/main/README.md)
+
+
