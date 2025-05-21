@@ -24,14 +24,38 @@ This project focuses on implementing a AI and Digital twin-driven decision suppo
 - Python 3.10
 - Raspberry Pi and IoT sensors
 
-## Detailed setup guide
-Coming soon.....
 
-## License
-This project is licensed under the MIT License.
+## 🛠️ Detailed Setup Guide
 
-## Manuscript
-Under preparation...
+This tutorial uses the [Groq API](https://console.groq.com/) for LLM inference. Follow the steps below to set up the system:
+
+### 1. Install Required Libraries
+
+Install the [PandasAI](https://pandas-ai.com/) library:
+
+### 2. Get Your Groq API Key
+
+Register for a Groq account at: [https://console.groq.com/](https://console.groq.com/)
+
+Once registered, generate your API key.
+
+---
+
+### 3. Configure the AI Assistant Script
+
+- Navigate to the `AIassistant/` folder.
+- Open `AIappchat.py` and insert your Groq API key where required.
+- You can specify the LLM model to use (e.g., `llama3`, `mistral`).
+
+---
+
+### 4. Run the AI Assistant App
+
+Use Chainlit to launch the assistant:
+
+```bash
+chainlit run AIappchat.py
+
 
 
 
