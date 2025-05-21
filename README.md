@@ -49,13 +49,16 @@ Once registered, generate your API key.
 
 ---
 
+
+
 ### 4. Run the AI Assistant App
 
 Use Chainlit to launch the assistant:
-
-```bash
 chainlit run AIappchat.py
 
 
+### 5. Test Data Analysis Capabilities
+You can test the AI assistant’s data analysis features using any IoT sensor dataset.
+An example dataset is included in the `AIassistant/` folder.
 
 
