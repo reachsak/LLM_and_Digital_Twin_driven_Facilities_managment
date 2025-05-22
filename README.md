@@ -4,7 +4,7 @@
 
 This project focuses on implementing a AI and Digital twin-driven decision support system for for smart building facilities management using digital twins, and large language models (LLMs). The aim is to enhance facility management through AI-driven insights and digital twin visualizations.
 <img src="/fig1.png" style="float: left; margin-right: 20px; max-width: 200px;">
-<img src="/fig2.png" style="float: left; margin-right: 20px; max-width: 200px;">
+<img src="/study22.gif" style="float: left; margin-right: 20px; max-width: 200px;">
 
 ### Key Features
 - **Digital Twin Visualization:** Creates a virtual replica of building systems to provide real-time monitoring and decision support.
